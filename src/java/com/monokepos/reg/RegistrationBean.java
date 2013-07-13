@@ -62,7 +62,7 @@ private String email;
 
     /**
      * Creates a new instance of RegistrationBean
-     */
+      */
     public RegistrationBean() {
     }
 }

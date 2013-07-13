@@ -42,8 +42,11 @@
                 <h:message for="edad"/>
 
                 <h:outputLabel value="Direccion email:" for="email" />
-                <h:inputText id="email" label="Direccion email:" required="true"
-                             value="#{registrationBean.email}"/>
+                <h:inputText id="email" label="Direccion email:"
+                             required="true"
+                             value="#{registrationBean.email}">
+                <f:validator validatorId="emailValidator"/>
+                </h:inputText>
                 <h:message for="email"/>
                 <h:panelGroup/>
                 <h:commandButton id="register" value="Registrar" action="confirmacion"/>
