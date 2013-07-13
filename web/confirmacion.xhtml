@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Confirmacion</title>
+        <h:outputStylesheet library="css" name="style.css"/>
+
+    </h:head>
+    <h:body>
+        <span><h:graphicImage library="images" name="imagen.png"/></span>
+
+        <h2>Página de confirmación.</h2>
+        <h:panelGrid bgcolor="cyan" columns="2" columnClasses=".alindex-bold, normal">
+            <h:outputText value="Saludo"/>
+            <h:outputText value="#{registrationBean.saludo}"/>
+            <h:outputText value="Nombre"/>
+            <h:outputText value="#{registrationBean.nombre}"/>
+            <h:outputText value="Apellidos"/>
+            <h:outputText value="#{registrationBean.apellidos}"/>
+            <h:outputText value="Edad"/>
+            <h:outputText value="#{registrationBean.edad}"/>
+            <h:outputText value="email"/>
+            <h:outputText value="#{registrationBean.email}"/>
+        </h:panelGrid>
+        <span><h:graphicImage library="images" name="imagen.png"/></span>
+
+    </h:body>
+</html>
