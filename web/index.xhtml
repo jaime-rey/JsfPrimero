@@ -38,7 +38,9 @@
                 <h:outputLabel value="Edad:" for="edad" />
                 <h:inputText id="edad" label="Edad:"
                              size="2" required="true"
-                             value="#{registrationBean.edad}"/>
+                             value="#{registrationBean.edad}">
+                    <f:validator validatorId="edadValidator"/>
+                </h:inputText>
                 <h:message for="edad"/>
 
                 <h:outputLabel value="Direccion email:" for="email" />
